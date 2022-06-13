@@ -1,0 +1,75 @@
+.button {
+    margin: 1px 1px 1px 1px;
+    border-radius: 5px;
+    border-width: 1px;
+    min-height: 80px;
+    min-width: 80px;
+    flex:0 1 25%;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.number {
+    background-color: rgb(105, 105, 105);
+    color: white;
+}
+
+.number:hover {
+    background-color: rgb(72, 72, 72);
+}
+
+.number:active {
+    background-color: rgb(105, 105, 105);
+}
+
+.operation {
+    background-color: rgb(72, 72, 72);
+    color: white;
+}
+
+.operation:hover {
+    background-color: rgb(105, 105, 105);
+}
+
+.operation:active {
+    background-color: rgb(72, 72, 72);
+}
+
+.result {
+    background-color: rgb(37, 157, 255);
+    color: white;
+}
+
+.result:hover {
+    background-color: rgb(10, 143, 251);
+}
+
+.result:active {
+    background-color: rgb(37, 157, 255);
+}
+
+@media screen and (max-width: 720px) {
+    .button {
+        margin: 1px 1px 1px 1px;
+        border-radius: 5px;
+        border-width: 1px;
+        min-height: 60px;
+        min-width: 60px;
+        flex:0 1 25%;
+        font-size: larger;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        margin: 1px 1px 1px 1px;
+        border-radius: 5px;
+        border-width: 1px;
+        min-height: 50px;
+        min-width: 50px;
+        flex:0 1 25%;
+        font-size: larger;
+        cursor: pointer;
+    }
+}

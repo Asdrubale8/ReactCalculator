@@ -1,0 +1,33 @@
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1px 1px 1px 1px;
+    background-color: rgb(0, 0, 0);
+    min-height: 100px;
+    flex-basis: 96.5%;
+}
+
+.error {
+    color: black;
+    background-color: red;
+    padding: 0px 10px 10px 0px;
+    font-size: xxx-large;
+}
+
+.displayText {
+    color: white;
+    min-height: 50px;
+    text-align: end;
+    padding: 0px 10px 10px 0px;
+    font-size: x-large;
+}
+
+.displaySubText {
+    color: white;
+    min-height: 80px;
+    text-align: end;
+    padding: 0px 10px 10px 0px;
+    font-size: xxx-large;
+}
