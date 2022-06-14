@@ -19,14 +19,25 @@ export default function History(props) {
     * Rendering of the history.
     */
     return <div className={styles.history}>
+
             <button onClick={ () => toggleHistory()} className={styles.button}>&#9776;</button> 
-            { show && <><span className={styles.title}>History</span> {props.operationHistory.length>0 && <button onClick={() => props.clearOperationHistory()} className={styles.deleteButton}>X</button>}</>}
-            {<div id="operations" className={styles.operations}>
-                {show && 
+
+            { 
+                show && 
+                <div className={styles.titleContainer}>
+                    <span className={styles.title}>History</span> 
+                    {props.operationHistory.length>0 && <div onClick={() => props.clearOperationHistory()} className={styles.deleteIcon}></div>}
+                </div>
+            }
+
+            <div id="operations" className={styles.operations}>
+                {
+                    show && 
                     <>
                         {props.operationHistory.map( (operation, index) => <div className={styles.operation} key={index}>{operation}</div> )}
                     </>
                 }
-            </div>}
+            </div>
+
         </div>
 }

@@ -4,25 +4,34 @@
     padding: 5px 5px 5px 5px;
 }
 
+.titleContainer {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
 .title {
     margin-left: 5px;
     color: black;
 }
 
-.deleteButton {
+.deleteIcon {
+    display: inline-block;
+    background-image: url('../public/trash-white.png');
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
     background-color: transparent;
-    color: black;
-    border-radius: 5px;
-    margin-left: 3px;
     cursor: pointer;
 }
 
-.deleteButton:hover {
-    background-color: darkgray;
+.deleteIcon:hover {
+    background-image: url('../public/trash-black.png');
 }
 
-.deleteButton:active {
-    background-color: transparent;
+.deleteIcon:active {
+    background-image: url('../public/trash-white.png');
 }
 
 .button {
@@ -43,9 +52,9 @@
 
 .operations {
     min-width: 200px;
-    max-height: 475px;
-    margin-top: 5px;
-    padding: 0px 0px 10px 30px;
+    max-height: 600px;
+    margin-top: 10px;
+    padding: 0px 0px 10px 35px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -54,28 +63,24 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 5px;
-    background-color: white;
+    color: white;
+    background-color: rgb(105, 105, 105);
 }
 
+@media screen and (max-width: 1080px) {
+    .operations {
+        max-height: 507px;
+    }
+}
 
 @media screen and (max-width: 720px) {
     .operations {
-        min-width: 200px;
-        max-height: 430px;
-        margin-top: 5px;
-        padding: 0px 0px 10px 30px;
-        overflow-y: auto;
-        overflow-x: hidden;
+        max-height: 415px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .operations {
-        min-width: 200px;
-        max-height: 380px;
-        margin-top: 5px;
-        padding: 0px 0px 10px 30px;
-        overflow-y: auto;
-        overflow-x: hidden;
+        max-height: 365px;
     }
 }

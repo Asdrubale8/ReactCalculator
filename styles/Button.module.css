@@ -2,8 +2,8 @@
     margin: 1px 1px 1px 1px;
     border-radius: 5px;
     border-width: 1px;
-    min-height: 80px;
-    min-width: 80px;
+    min-height: 100px;
+    min-width: 100px;
     flex:0 1 25%;
     font-size: larger;
     cursor: pointer;
@@ -46,6 +46,19 @@
 
 .result:active {
     background-color: rgb(37, 157, 255);
+}
+
+@media screen and (max-width: 1080px) {
+    .button {
+        margin: 1px 1px 1px 1px;
+        border-radius: 5px;
+        border-width: 1px;
+        min-height: 80px;
+        min-width: 80px;
+        flex:0 1 25%;
+        font-size: larger;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 720px) {
