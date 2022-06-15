@@ -1,10 +1,10 @@
 .button {
-    margin: 1px 1px 1px 1px;
+    margin: 1px;
     border-radius: 5px;
     border-width: 1px;
     min-height: 100px;
     min-width: 100px;
-    flex:0 1 25%;
+    flex-basis: 25%;
     font-size: larger;
     cursor: pointer;
 }
@@ -63,26 +63,14 @@
 
 @media screen and (max-width: 720px) {
     .button {
-        margin: 1px 1px 1px 1px;
-        border-radius: 5px;
-        border-width: 1px;
         min-height: 60px;
         min-width: 60px;
-        flex:0 1 25%;
-        font-size: larger;
-        cursor: pointer;
     }
 }
 
 @media screen and (max-width: 600px) {
     .button {
-        margin: 1px 1px 1px 1px;
-        border-radius: 5px;
-        border-width: 1px;
         min-height: 50px;
         min-width: 50px;
-        flex:0 1 25%;
-        font-size: larger;
-        cursor: pointer;
     }
 }

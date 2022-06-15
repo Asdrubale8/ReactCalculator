@@ -3,10 +3,8 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 1px 1px 1px 1px;
+    margin: 1px;
     background-color: rgb(0, 0, 0);
-    min-height: 100px;
-    flex-basis: 96.5%;
 }
 
 .error {
