@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project of a simple calculator.
 
+![Screenshot](img/calculator_screenshot.png)
+
 ## Getting Started
 
 First, install all necessary package:
